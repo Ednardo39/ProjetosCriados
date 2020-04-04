@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Produto</title>
+	<meta charset="utf-8"/>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="_css/estilo_barra.css">
+	<link rel="stylesheet" type="text/css" href="_css/estilo_cadastro_produto.css">
+
+	<script type="text/javascript" src="_js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="_js/jquery.mask.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#cpf").mask("000.000.000-00")
+			$("#cnpj").mask("00.000.000/0000-00")
+			$("#telefone").mask("(00) 0000-0000")
+			$("#salario").mask("999.999.990,00", {reverse: true})
+			$("#cep").mask("00.000-000")
+			$("#dataNascimento").mask("00/00/0000")
+			$("#pcusto").mask('000.000.000.000.000,00', {reverse: true});
+			$("#pcusto").mask("#.##0,00", {reverse: true});
+			$("#pvenda").mask('000.000.000.000.000,00', {reverse: true});
+			$("#pvenda").mask("#.##0,00", {reverse: true});
+			$("#plucro").mask('000.000.000.000.000,00', {reverse: true});
+			$("#plucro").mask("#.##0,00", {reverse: true});
+			
+			$("#rg").mask("999.999.999-W", {
+				translation: {
+					'W': {
+						pattern: /[X0-9]/
+					}
+				},
+				reverse: true
+			})
+			
+			var options = {
+				translation: {
+					'A': {pattern: /[A-Z]/},
+					'a': {pattern: /[a-zA-Z]/},
+					'S': {pattern: /[a-zA-Z0-9]/},
+					'L': {pattern: /[a-z]/},
+				}
+			}
+			
+			$("#placa").mask("AAA-0000", options)
+			
+			$("#codigo").mask("AA.LLL.0000", options)
+			
+			$("#cel").mask("(00) 0000-00009")
+			
+			$("#cel").blur(function(event){
+				if ($(this).val().length == 15){
+					$("#cel").mask("(00) 00000-0009")
+				}else{
+					$("#cel").mask("(00) 0000-00009")
+				}
+			})
+		})
+	</script>
+
+
+</head>
+<body id="corpo">
+	<!-- Menu de navegação -->
+	<nav class="navbar fixed-top navbar-default" style="background: #FFFF00">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+					<span class="sr-only">Alternar Menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- a href="#" class="navbar-brand">VELMOTOS</a>-->
+				<a id="vel" class="navbar-brand" href="index.html">VEL<span id="motos">MOTOS</span></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="barra-navegacao">
+				<!--Menu Cliente -->
+				<ul class="nav navbar-nav dropdown">
+					<li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+						<img src="_img/usuario32.png">
+					</span> Clientes <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="cadastro-cliente.html"><span>
+							<img src="_img/add_user242.png">
+						</span>Cadastrar</a></li><hr />
+						<li><a class="dropdown-item" href="pesq_cliente"><img src="_img/pesq32.png">
+						</span>Pesquisar</a></li>
+					</ul>
+				</li>
+
+				<!--Menu Produtos -->
+				<li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+					<img src="_img/box32.png">
+				</span>Produtos <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="cadastro-produto.html"><span>
+						<img src="_img/box_add32.png">
+					</span>Cadastrar</a></li><hr />
+					<li><a class="dropdown-item" href="pesq_cliente"><img src="_img/pesq32.png">
+					</span>Pesquisar</a></li>
+				</ul>
+			</li><!--Fim menu Produtos -->
+			
+
+			<!--Menu Fornecedores -->
+			<li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+				<img src="_img/entrega.png">
+			</span>Fornecedores <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="cadastro-fornecedores.html"><span>
+					<img src="_img/forn_cad32.png">
+				</span>Cadastrar</a></li><hr />
+				<li><a class="dropdown-item" href="pesq_cliente"><img src="_img/pesq32.png">
+				</span>Pesquisar</a></li>
+			</ul>
+		</li><!--Fim Menu Fornecedores -->
+	</div><!--Fim de container -->  
+</nav><!-- Fim de Menu de navegação -->
+
+
+<!--Inicio do formulário-->
+<form class="row col-md-6" id="formulario">
+
+	<div id="dados-produto" class="form-group col-sm-6"></label> DADOS DO PRODUTO </label></div>
+
+	<div class="row"></div>
+
+	<div class="row">
+		<div class="form-group col-sm-3 txtform">
+			<label for="produto">Produto <h11>*</h11></label>
+			<input id="produto" type="text" class="form-control todos-inputs" placeholder="Digite o nome do produto" required="">
+		</div>
+
+		<div class="form-group col-sm-3 txtform">
+			<label for="fabricante">Fabricante</label>
+			<input id="fabricante" type="text" class="form-control  todos-inputs" placeholder="Produto fabricado por...">
+		</div>    
+	</div>
+
+	<div class="row">
+		<div class="form-group col-sm-3 txtform">
+			<label for="categoria">Categoria <h11>*</h11></label>
+			<select class="form-control  todos-inputs" id="categoria">
+				<option>Escolha a categoria correspondente...</option>
+				<option>Original</option>
+				<option>Genuíno</option>
+				<option>Paralelo</option>
+			</select>
+		</div>
+
+		<div class="form-group col-sm-3 txtform">
+			<label for="mod-dest"> Modelo destinado <h11>*</h11></label>
+			<input id="mod-dest" type="text" class="form-control  todos-inputs" placeholder="Para uso nos modelos..." required="">
+		</div>
+	</div>          
+
+	<div class="row">
+		<div class="form-group col-sm-2 txtform">            
+			<label for="qtd">Quantidade <h11>*</h11></label>
+			<input id="qtd" type="number" class="form-control todos-inputs" placeholder="QTD comprada" required="">            
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-sm-2 txtform">            
+			<label for="pcusto">Preço de Custo <h11>*</h11></label>
+			<input id="pcusto" type="text" class="form-control todos-inputs" placeholder="R$-" required="">        
+		</div>
+
+		<div class="form-group col-sm-2 txtform">            
+			<label for="pervenda">Percentagem venda</label>
+			<input id="pervenda" type="text" class="form-control todos-inputs" placeholder="%">            
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-sm-2 txtform">            
+			<label for="plucro">Valor do lucro</label>
+			<input id="plucro" type="text" class="form-control todos-inputs" placeholder="R$-">            
+		</div>
+
+		<div class="form-group col-sm-2 txtform">            
+			<label for="pvenda">Preço de Venda</label>
+			<input id="pvenda" type="text" class="form-control todos-inputs" placeholder="R$-">            
+		</div>
+	</div>
+
+
+	<br/>
+	<div id="botoes" class="form-group col-sm-3">            
+		<button class="btn btn-success" style="font-size: 14pt;"><i class="fas fa-save"></i> CADASTRAR</button>
+
+	</div>
+
+	<div id="botoes" class="form-group col-sm-3">            
+
+		<button type="reset" class="btn btn-warning " style="font-size: 14pt;"><i class="fas fa-sync-alt"></i> CANCELAR</button>          
+	</div>
+
+	<br/><br/><br/><br/><br/>
+	<div class="row ">
+
+	</div>
+
+</form>
+
+</body>
+</html>

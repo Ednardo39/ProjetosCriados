@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <!-- Required meta tags -->
+  <title>VelMotos</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="_css/estilo_barra.css">
+  <link rel="stylesheet" type="text/css" href="_css/estilo_conteudo_index.css"/>
+  
+
+</head>
+<body id="corpo">
+  <!-- Menu de navegação -->
+  <nav class="navbar fixed-top navbar-default" style="background: #FFFF00">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+          <span class="sr-only">Alternar Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- a href="#" class="navbar-brand">VELMOTOS</a>-->
+        <a id="vel" class="navbar-brand" href="#">VEL<span id="motos">MOTOS</span></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="barra-navegacao">
+        <!--Menu Cliente -->
+        <ul class="nav navbar-nav dropdown">
+          <li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+            <img src="_img/usuario32.png">
+          </span> Clientes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cadastro-cliente.html"><span>
+              <img src="_img/add_user242.png">
+            </span>Cadastrar</a></li><hr />
+            <li><a class="dropdown-item" href="pesq_cliente"><img src="_img/pesq32.png">
+            </span>Pesquisar</a></li>
+          </ul>
+        </li>
+        <!--Menu Produtos -->
+        <li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+          <img src="_img/box32.png">
+        </span>Produtos <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="cadastro-produto.html"><span>
+            <img src="_img/box_add32.png">
+          </span>Cadastrar</a></li><hr />
+          <li><a class="dropdown-item" href="cadastro-produto.html"><img src="_img/pesq32.png">
+          </span>Pesquisar</a></li>
+        </ul>
+      </li><!--Fim menu Produtos -->
+
+      <!--Menu Fornecedores -->
+      <li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+        <img src="_img/entrega.png">
+      </span>Fornecedores <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="cadastro-fornecedores.html"><span>
+          <img src="_img/forn_cad32.png">
+        </span>Cadastrar</a></li><hr />
+        <li><a class="dropdown-item" href="cadastro-fornecedores.html"><img src="_img/pesq32.png">
+        </span>Pesquisar</a></li>
+      </ul>
+    </li><!--Fim Menu Fornecedores -->
+  </div><!--Fim de container -->
+</nav><!-- Fim de Menu de navegação -->
+
+
+<!--cards -->
+<!--<div id="card1" class="row col-sm-12">
+  <div>
+    <img id="card-img" class="img-fluid row col-sm-6" alt="Responsive image" src="_img/motovel32.png" />
+  </div>
+</div>--><!-- Fim div card1 -->
+
+<!-- Cadastrar Cliente -->
+<div id="card2" class="cartoes row col-sm-10">
+  <div class="col-sm-4"><a class="links" href="cadastro-cliente.html">
+    <!--<div class="card">-->
+      <!--<div class="card-body">-->         
+        <div class="card card-body cds">
+          <img class="align-self-start mr-3" src="_img/user-group.png">
+          <div class="media-body">
+            <h4 class="mt-0">Cadastrar Cliente</h4>
+            <p>Para fazer o cadastro de um novo cliente, você pode clicar aqui sem medo.</p>
+            <button type="button" class="btn btn-outline-secondary" id="save"><a href="cadastro-cliente.html"  class="h5"><i class="fas fa-save"></i> Cadastrar Cliente</a></button>
+          </div><br>
+        </div>
+        <!--</div>-->
+        <!--</div>-->
+      </div> </a><!-- Fim Cadastrar Cliente -->
+
+      <!-- Cadastrar Produto -->
+      <div class="cartoes col-sm-4"><a class="links" href="cadastro-produto.html">
+        <div class="card">
+          <div class="card-body">         
+            <div>
+              <img class="align-self-start mr-3" src="_img/inventario2.jpg">
+              <div class="media-body">
+                <h4 class="mt-0">Cadastrar Produto</h4>
+                <p>Para fazer o cadastro de um novo produto, você pode clicar aqui sem medo.</p>
+                <button type="button" class="btn btn-outline-secondary" id="save"><a href="cadastro-produto.html"  class="h5"><i class="fas fa-save"></i> Cadastrar Produto</a></button>
+              </div><br>
+            </div>
+
+          </div>
+        </div>
+      </div></a><!-- Fim Cadastrar Produto -->
+
+      <div class="cartoes col-sm-4"><a class="links" href="cadastro-fornecedores.html">
+        <div class="card">
+          <div class="card-body">         
+            <div class="cds">
+              <img class="align-self-start mr-3" src="_img/entrega64.png">
+              <div class="media-body">
+                <h4 class="mt-0">Cadastrar Fornecedor</h4>
+                <p>Para fazer o cadastro de um novo fornecedor, você pode clicar aqui sem medo.</p>
+                <button type="button" class="btn btn-outline-secondary" id="save"><a href="cadastro-fornecedores.html"  class="h5"><i class="fas fa-save"></i> Cadastrar Fornecedor</a></button>
+              </div><br>
+            </div>
+          </div>
+        </div>
+      </div></a>
+    </div><!--Fim de card2-->
+    <br/>
+
+    <div id="card3" class="cartoes row col-sm-10">
+      <div class="col-sm-4"><a class="links" href="pesq_cli.html">
+        <div class="card">
+          <div class="card-body">         
+            <div class="cds">
+              <img class="align-self-start mr-3" src="_img/pesq_user64.png">
+              <div class="media-body">
+                <h4 class="mt-0">Pesquisar Cliente</h4>
+                <p>Para fazer a pesquisa de um cliente, você pode clicar aqui sem medo.</p>
+                <button type="button" class="btn btn-outline-secondary" id="pesq"><a href="pesq_cli.html"  class="h5"><i class="fas fa-search"></i> Pesquisar Cliente</a></button>
+              </div><br>
+            </div>
+
+          </div>
+        </div>
+      </div> </a>
+
+      <div class="cartoes col-sm-4"><a class="links" href="cadastro-fornecedores.html">
+        <div class="card">
+          <div class="card-body">         
+            <div>
+              <img class="align-self-start mr-3" src="_img/Pesquisar.png">
+              <div class="media-body">
+                <h4 class="mt-0">Pesquisar Produto</h4>
+                <p>Para fazer a pesquisa de um produto, você pode clicar aqui sem medo.</p>
+                <button type="button" class="btn btn-outline-secondary" id="pesq"><a href="pesq_produto.html"  class="h5"><i class="fas fa-search"></i> Pesquisar Produto</a></button>
+              </div><br>
+            </div>
+
+          </div>
+        </div>
+      </div></a>
+
+      <div class="cartoes col-sm-4"><a class="links" href="cadastro-fornecedores.html">
+        <div class="card">
+          <div class="card-body">         
+            <div>
+              <img class="align-self-start mr-3" src="_img/pesquisa64.png">
+              <div class="media-body">
+                <h4 class="mt-0">Pesquisar Fornecedor</h4>
+                <p>Para fazer a pesquisa de um fornecedor, você pode clicar aqui sem medo.</p>
+                <button type="button" class="btn btn-outline-secondary" id="pesq"><a href="pesq_fornecedor.html"  class="h5"><i class="fas fa-search"></i> Pesquisar Fornecedor</a></button>
+              </div><br>
+            </div>
+          </div>
+        </div>
+      </div></a>
+    </div>  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+  </body>
+  </html>

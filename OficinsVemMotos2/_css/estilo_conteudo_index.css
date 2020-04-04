@@ -1,0 +1,71 @@
+/*Configuração do conteudo da página*/
+#corpo{
+	background-image: url(../_img/motovel12.png);
+	background-attachment: fixed;
+}
+
+#card2{
+	margin-left: 10%;	
+	top: 10px;
+}
+
+#card2 p{
+	font-weight: bold;
+	color: #fff;
+	font-size: 12pt;
+}
+
+#card2 h4, #card3 h4{
+	font-weight: bold;
+	color: #FFFF00;
+	
+}
+
+.card-body{
+	background: rgba(0, 0, 0, 0.4);
+	padding-left: 5px;
+}
+
+.card-body{
+	padding-top: 15px;
+}
+
+#card3{
+	margin-top: 10px;
+	margin-left: 10%;	
+	top: 15px;
+}
+
+#card3 p{
+	font-weight: bold;
+	color: #fff;
+	font-size: 12pt;
+}
+
+#card-img{
+	left: 25%;
+}
+
+.links{
+	color: #000;
+}
+
+.links h5{
+	color: blue;
+}
+
+#save{
+	background: #00BFFF;
+}
+
+#pesq{
+	background: #F4A460;
+}
+
+.h5{
+	color: #fff;
+}
+
+
+
+

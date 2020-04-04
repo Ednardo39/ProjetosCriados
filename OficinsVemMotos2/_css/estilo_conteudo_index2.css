@@ -1,0 +1,63 @@
+/*Configuração do conteudo da página*/
+#card1{
+	background: blue;
+	width: 100%;
+	margin-left: 0%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	top: -20px;
+}
+
+#card2{
+	margin-left: 10%;	
+	top: 10px;
+	/*border: 1px solid red;*/
+}
+
+#card2 p{
+	font-weight: bold;
+}
+
+.card-body{
+	background: #fff;
+	padding-left: 5px;
+}
+
+.card-body{
+	padding-top: 15px;
+}
+
+#card3{
+	margin-top: 10px;
+	margin-left: 10%;	
+	top: 15px;
+	/*border: 1px solid red;*/
+}
+
+#card-img{
+	left: 25%;
+}
+
+.links{
+	color: #000;
+}
+
+.links h5{
+	color: blue;
+}
+
+#save{
+	background: #00BFFF;
+}
+
+#pesq{
+	background: #F4A460;
+}
+
+.h5{
+	color: #fff;
+}
+
+
+
+

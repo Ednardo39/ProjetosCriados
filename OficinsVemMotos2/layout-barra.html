@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <!-- Required meta tags -->
+  <title>Layout da Barra</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="_css/estilo_barra.css">
+  <link rel="stylesheet" type="text/css" href="_css/estilo_conteudo_index.css"/>
+
+</head>
+<body id="corpo">
+  <!-- Menu de navegação -->
+  <nav class="navbar fixed-top navbar-default" style="background: #FFFF00">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+          <span class="sr-only">Alternar Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- a href="#" class="navbar-brand">VELMOTOS</a>-->
+        <a id="vel" class="navbar-brand" href="#">VEL<span id="motos">MOTOS</span></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="barra-navegacao">
+        <!--Menu Cliente -->
+        <ul class="nav navbar-nav dropdown">
+          <li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+            <img src="_img/usuario32.png">
+          </span> Clientes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cadastro-cliente.html"><span>
+              <img src="_img/add_user242.png">
+            </span>Cadastrar</a></li><hr />
+            <li><a class="dropdown-item" href="pesq_cliente"><img src="_img/pesq32.png">
+            </span>Pesquisar</a></li>
+          </ul>
+        </li>
+        <!--Menu Produtos -->
+        <li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+          <img src="_img/box32.png">
+        </span>Produtos <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="cadastro-produto.html"><span>
+            <img src="_img/box_add32.png">
+          </span>Cadastrar</a></li><hr />
+          <li><a class="dropdown-item" href="pesq_cliente"><img src="_img/pesq32.png">
+          </span>Pesquisar</a></li>
+        </ul>
+      </li><!--Fim menu Produtos -->
+
+      <!--Menu Fornecedores -->
+      <li><a id="lin" href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+        <img src="_img/entrega.png">
+      </span>Fornecedores <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="cadastro-fornecedores.html"><span>
+          <img src="_img/forn_cad32.png">
+        </span>Cadastrar</a></li><hr />
+        <li><a class="dropdown-item" href="pesq_cliente"><img src="_img/pesq32.png">
+        </span>Pesquisar</a></li>
+      </ul>
+    </li><!--Fim Menu Fornecedores -->
+  </div><!--Fim de container -->
+</nav><!-- Fim de Menu de navegação -->
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+</body>
+</html>

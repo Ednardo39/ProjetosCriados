@@ -1,0 +1,44 @@
+
+h11{
+	color: red;
+}
+#corpo{
+	background-image: url(../_img/motovel12.png);
+	background-attachment: fixed;
+}
+
+#formulario{
+	left: 15px;
+	background: rgba(135,206,250, 0.5);
+	width: 100%;
+	margin-top: -18px;
+}
+
+#dados-fornecedor{
+	text-align: center;
+	background: #0101DF;
+	color: #FFFF00;	
+	font-size: 18pt;
+	padding-top: 5px;
+	margin-top: 10px;
+}
+
+#botoes{
+	text-align: center;
+	padding-top: 10px;
+}
+/*
+label{
+	font-size: 14pt;
+	}*/
+
+.txtform{
+	font-size: 14pt;
+	color: #000;
+}
+
+.todos-inputs{
+	font-size: 14pt;
+	color: #000;
+}
+

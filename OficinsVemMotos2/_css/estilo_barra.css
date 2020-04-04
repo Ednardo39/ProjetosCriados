@@ -1,0 +1,46 @@
+
+
+#corpo{
+	background: #D3D3D3;
+}
+
+#barra-navegacao{
+	/*font-family: 'Geneva'; */
+	/*font-family: 'Lucida Bright';*/
+	font-family: 'Impact';
+	font-size: 14pt;
+	color: red;
+	
+}
+
+#motos{
+	/*font-family: 'Geneva'; */
+	/*font-family: 'Lucida Bright';*/
+	font-family: 'Impact';
+	font-size: 25pt;
+	color: #0101DF;
+}
+
+#vel{
+	/*font-family: 'Geneva'; */
+	/*font-family: 'Lucida Bright';*/
+	font-family: 'Impact';
+	font-size: 25pt;
+	color: red;
+}
+
+#lin{
+	padding-left: 20px;
+	color: #0101DF;
+	/*font-weight: bold;*/
+	font-size: 16pt;
+}
+
+
+/
+
+.panel-heading{
+	font-size:150%;
+}
+
+
